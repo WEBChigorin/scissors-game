@@ -48,8 +48,8 @@ function playRound(computer, user){
       computerPoints += 1;}
     if(computer === 'SCISSORS'){
       console.log('You did it!');
-      humanPoints += 1;
-    }else{
+      humanPoints += 1;}
+    if (user === computer){
       console.log('No one wins! It is a tie!');}
   }    
   else if(user === 'PAPER'){
@@ -58,8 +58,8 @@ function playRound(computer, user){
       humanPoints += 1;}
     if(computer === 'SCISSORS'){
       console.log('Computer Wins!');
-      computerPoints += 1;
-    }else{
+      computerPoints += 1;} 
+      if (user === computer){
         console.log('No one wins! It is a tie!');}
   } 
   else if(user === 'SCISSORS'){
@@ -68,9 +68,9 @@ function playRound(computer, user){
       humanPoints += 1;}
     if(computer === 'ROCK'){
       console.log('Computer wins!');
-      computerPoints += 1;
-    }else{
-      console.log('No one wins! It is a tie!');}
+      computerPoints += 1;}
+      if (user === computer ){
+        console.log('No one wins! It is a tie!');}
   }
 }
 
